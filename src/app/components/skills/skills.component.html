@@ -7,12 +7,12 @@
     <div>
        <ul class="items-list">
            <li *ngFor="let skill of skillsList">
-                    <p class="skillname">{{skill.name}}</p><p class="skillper"> {{skill.porcentaje}} %</p>
+                    <p class="skillname">{{skill.name}} </p><p class="skillper"> {{skill.porcentaje}} %</p>
                     <!--span id="skillcircle">
                         <app-circlebar [progress]="skill.porcentaje"></app-circlebar>
                      </span-->
-                     
-                     <span><div (id)="skill.id" >
+                  
+                     <span ><div id="progress" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)">
                         <span id="progress-value"></span>
                     </div></span>
            </li>

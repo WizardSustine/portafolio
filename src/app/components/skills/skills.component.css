@@ -19,19 +19,17 @@ ul{
     border-radius: 50%;
     display: grid;
     place-items: center;
-    float: left;
-    margin-top: 3px;
-    margin-right: 10px;
   }
   
-  #progress-value {
+#progress-value {
     display: block;
-    height: calc(100% - 3em);
-    width: calc(100% - 3em);
+    height: calc(100% - 4em);
+    width: calc(100% - 4em);
     background-color: #ffffff;
     border-radius: 50%;
     display: grid;
     place-items: center;
+    align-content: stretch;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1em;
   }

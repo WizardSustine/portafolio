@@ -45,13 +45,16 @@
    "skills":[{
       "name":"Java",
       "img":"",
-      "porcentaje":"65",
-      "id":"1"
+      "porcentaje":"65"
    },
    {
       "name":"JS",
       "img":"",
-      "porcentaje":"5",
-      "id":"2"
+      "porcentaje":"5"
+   },
+   {
+      "name":"algomás",
+      "img":"",
+      "porcentaje":"95"
    }]
 }
