@@ -1,0 +1,57 @@
+{
+    "name":"Juan Bustamante",
+    "backImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8MzBzEvYATafE32SI9V59XgbrMIW8MqrfxQ&usqp=CAU",
+    "image":"",
+    "position":"Técnico en Departamento de Análisis Digital Forense",
+    "company":{
+       "name":"Departamento de Análisis Digital Forense",
+       "img":"",
+       "url":""
+    },
+    "school":{
+       "name":"",
+       "img":"",
+       "url":""
+    },
+    "ubicacion":"Rosario, Santa Fe (Argentina)",
+    "about":"Técnico en mejoramiento de imágenes",
+    "experiences":[{
+         "position":"Plomero",
+         "company":"Informal",
+         "img":"",
+         "mode":"full time",
+         "start":"01/01/2010",
+         "end":"01/01/2018",
+         "timelapsed":"8 años"
+    }],
+    "education":[{
+         "school":"Instituto de Seguridad Pública",
+         "degree":"Técnico Superior",
+         "img":"https://www.isepsantafe.edu.ar/templates/g5_helium/images/header/logo_1.png",
+         "career":"Seguridad Pública y Ciudadana",
+         "score": 0,
+         "start":"2018",
+         "end":"2022"
+    },
+    {
+      "school":"Escuela Superior de Comercio Nº 49 Capitán General Justo José de Urquiza",
+      "degree":"Técnico Superior",
+      "img":"https://www.terciariourquiza.edu.ar/images/nuevas-carreras/DS.jpg",
+      "career":"Desarrollo de Software",
+      "score": 0,
+      "start":"2022",
+      "end":"2025"
+   }],
+   "skills":[{
+      "name":"Java",
+      "img":"",
+      "porcentaje":"65",
+      "id":"1"
+   },
+   {
+      "name":"JS",
+      "img":"",
+      "porcentaje":"5",
+      "id":"2"
+   }]
+}

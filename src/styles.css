@@ -1,0 +1,69 @@
+.btn-edit{
+    display: flex;
+    align-self: flex-end;
+}
+#info-img{
+    display: flex;
+}
+
+.btn-right{
+    display: flex;
+    align-self: flex-end;
+}
+
+.fa-button, .fa{
+    color: black;
+    display: block;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+}
+
+.fa-button:hover, .fa:hover{
+    background: gray;
+}
+
+div#info-data ul#info-details{
+    width: 232px;
+    list-style: none;
+    flex-shrink: 0;
+}
+dl, ol, ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul{
+    padding-left: 2rem;
+}
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: black;
+}
+.mat-card#first-card{
+    padding: 0;
+}
+div#background-banner{
+    display: flex;
+    z-index: 1;
+
+}
+div#background-banner img{
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+.profile-image{
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    margin-top: -110px;
+    z-index: 1;
+    position:relative;
+}
+div#info-actions{
+    display: flex;
+}
