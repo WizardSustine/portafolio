@@ -20,13 +20,24 @@ export class SkillsComponent implements OnInit {
     });
   }
 
+  public onButtonAddClick(): void {
+    if (!this.skillsList) {
+      this.skillsList = [];
+    }
+
+    this.skillsList.push({
+      porcentaje: Math.floor(Math.random() * 100),
+      name: 'falopa',
+    });
+  }
+
   trackEmployee(index: any,information: { id: any; }){
     return information ? information.id : undefined;
   }
   
-  setstyle(id:string, progress:number){
-    this.scrollProgress = document.getElementById(id);
-    this.scrollProgress.style.background = `conic-gradient(#008fff ${progress}%, #f2f2f4 ${progress}%)`;
-  }
+  // setstyle(id:string, progress:number){
+  //   this.scrollProgress = document.getElementById(id);
+  //   this.scrollProgress.style.background = `conic-gradient(#008fff ${progress}%, #f2f2f4 ${progress}%)`;
+  // }
 
 }
