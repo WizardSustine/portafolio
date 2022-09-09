@@ -1,20 +1,19 @@
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
+<div class="bk-ground card mat-card">
   <div id="Logros">
     <div class="card-titles">
        <h2>Logros</h2>
        <div class="btn-edit"></div>
     </div>
     <div>
-       <ul class="items-list">
-           <li *ngFor="let skill of skillsList">
-                    <p class="skillname">{{skill.name}} </p><p class="skillper"> {{skill.porcentaje}} %</p>
-                    <!--span id="skillcircle">
-                        <app-circlebar [progress]="skill.porcentaje"></app-circlebar>
-                     </span-->
-                  
-                     <span ><div id="progress" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)">
-                        <span id="progress-value"></span>
-                    </div></span>
+       <ul class="row justify-content-around">
+           <li class="col" *ngFor="let skill of skillsList">
+                    <p class="skillname row justify-content-around">{{skill.name}}</p>
+                    <p class="skillper row justify-content-around"> {{skill.porcentaje}}%</p>                  
+                     <span>
+                        <div class="progress row" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)"> 
+                           <div class="progress-value"></div>
+                        </div>
+                    </span>
            </li>
         </ul>
     </div>

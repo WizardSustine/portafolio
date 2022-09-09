@@ -13,19 +13,20 @@ ul{
     margin-left: 4em;
 }
 
-#progress {
+.progress {
     height: 12em;
     width: 12em;
     border-radius: 50%;
     display: grid;
     place-items: center;
+    float: left;
   }
   
-#progress-value {
+.progress-value {
     display: block;
     height: calc(100% - 4em);
     width: calc(100% - 4em);
-    background-color: #ffffff;
+    background-color: rgb(27, 1, 1);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -33,3 +34,8 @@ ul{
     font-weight: 600;
     font-size: 1em;
   }
+
+  .bk-ground{
+    background-color: rgb(27, 1, 1);
+    color: white;
+}

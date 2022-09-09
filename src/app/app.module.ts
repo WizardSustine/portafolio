@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ProjectsComponent } from './components/projects/projects.component'
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
