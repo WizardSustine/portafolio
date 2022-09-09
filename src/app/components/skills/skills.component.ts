@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 
@@ -10,7 +10,6 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 })
 export class SkillsComponent implements OnInit {
   public skillsList: any;
-  public scrollProgress: any;
 
   constructor(private datosPorfolio:PorfolioService) { }
 
@@ -39,5 +38,4 @@ export class SkillsComponent implements OnInit {
   //   this.scrollProgress = document.getElementById(id);
   //   this.scrollProgress.style.background = `conic-gradient(#008fff ${progress}%, #f2f2f4 ${progress}%)`;
   // }
-
 }
