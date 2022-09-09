@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
-
-
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
