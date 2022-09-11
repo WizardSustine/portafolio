@@ -1,12 +1,10 @@
 ul{
     list-style: none;
 }
-.skillname{
-    font-size: 2.5em;
-    float: left;
-}
+
 .skillper{
-    font-size: 2.5em;
+    font-size: 2em;
+    float: left;
 }
 #skillcircle{
     display: block;
@@ -38,4 +36,8 @@ ul{
   .bk-ground{
     background-color: rgb(27, 1, 1);
     color: white;
+}
+.skillimg{
+    max-height: 50px;
+    
 }

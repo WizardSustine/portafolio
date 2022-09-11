@@ -1,0 +1,41 @@
+<div class="bk-ground card mat-card" id="first-card">
+    <div id="background-banner">
+        <img [src]="miPortfolio.backImage" alt="banner"/>
+    </div>
+    <div id="info" style="padding: 16px;">
+        <div id="personal-picture">
+            <img class="profile-image" 
+            [src]="miPortfolio.image" alt="profile-picture"/>
+        </div>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        <div id="info-data">
+            <div>
+                <h1>{{miPortfolio.name}}</h1>
+                <div id="info-company">{{miPortfolio.position}}</div>
+                <div id="info-contact">
+                    <span>{{miPortfolio.ubicacion}}</span>
+                    <span><a href=""></a></span>
+                </div>
+            </div>
+            <ul id="info-details">
+                <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <h2>algo</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <h2>algo</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="info-actions">
+            <button class="btn btn-primary" type="button">Intereses</button>
+            <button class="btn btn-light" type="button">Añadir sección</button>
+            <button class="btn btn-light" type="button">Más</button>
+        </div>
+    </div>
+  </div>

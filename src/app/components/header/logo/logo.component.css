@@ -1,0 +1,26 @@
+img {
+    width: 6em;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+}
+.plogo{
+    float: left;
+    color: white;
+    align-self: center;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.logos{
+    background-color: rgba(255, 81, 0, 0.503);
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.5em;
+}
+.block{
+    float: right;
+    margin-right: 1.2em;
+    margin-top: 1em;
+}

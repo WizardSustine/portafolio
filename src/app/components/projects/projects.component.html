@@ -1,1 +1,27 @@
-<p>projects works!</p>
+<div class="bk-ground card mat-card">
+    <div id="projects">
+        <div class="card-titles">
+        <h2>Proyectos</h2>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+     </div>
+     <div>
+        <ul class="items-list">
+            <li  *ngFor="let project of projectsList">
+                <div class="row justify-content-start">
+                    <span class="col-2">
+                        <img [src]="project.img" alt="tecnología"/>
+                    </span>
+                    <div class="col description-list">
+                        <h4>{{project.name}}</h4>
+                        <p>{{project.description}}</p><br/>
+                        <h5>{{project.link}}</h5>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="data-control">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+          </div>
+     </div>
+    </div>
+</div>

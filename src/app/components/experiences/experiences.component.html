@@ -1,57 +1,29 @@
 <div class="bk-ground card mat-card">
     <div id="experience">
-     <div class="card-titles">
+        <div class="card-titles">
         <h2>Experiencia</h2>
         <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
      </div>
      <div>
         <ul class="items-list">
-            <li>
-                <div class="data-container">
-                    <a href="#">
-                        <div class="logo-image-container">
-                            <img src="" alt="">
-                        </div>
-                        <div class="list-info">
-                            <h3>algo</h3>
-                            <p></p>
-                            <h4>desde - hasta - tiempo total</h4>
-                            <h4>Santa Fe, Argentina</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="data-control">
-                  <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <li  *ngFor="let experiense of experiencesList">
+                <div class="row justify-content-start">
+                    <span class="col-2">
+                        <img [src]="experiense.img" alt="Logo empresa"/>
+                    </span>
+                    <div class="col description-list">
+                        <h4>{{experiense.position}}</h4>
+                        <p>en {{experiense.company}}</p><br/>
+                        <p>Modalidad {{experiense.mode}}</p>
+                        <h5><time>{{experiense.start}}</time> - <time>{{experiense.end}}</time> - <time>{{experiense.timelapsed}}</time></h5>
+                        <h5>{{experiense.city}}</h5>
+                    </div>
                 </div>
             </li>
         </ul>
+        <div class="data-control">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+          </div>
      </div>
     </div>
-    <div id="educacion">
-        <div class="card-titles">
-           <h2>Educación</h2>
-           <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-        </div>
-        <div>
-           <ul class="items-list">
-               <li *ngFor="let education of educationList">
-                   <div class="data-container">
-                       <a href="#">
-                           <div class="logo-image-container">
-                               <img [src]="education.img" alt=""/>
-                           </div>
-                           <div class="list-info">
-                               <h3>{{education.school}}</h3>
-                               <p>{{education.degree}}</p>
-                               <h4><time>{{education.start}}</time> - <time>{{education.end}}</time></h4>
-                           </div>
-                       </a>
-                   </div>
-                   <div class="data-control">
-                     <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-                   </div>
-               </li>
-           </ul>
-        </div>
-       </div>
-  </div>
+</div>

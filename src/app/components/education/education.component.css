@@ -5,6 +5,11 @@
 ul{
     list-style: none;
 }
-img{
-    max-height: 6em;
+.logo-image-a {
+    max-height: 4em;
+    margin-top: 1em;
+}
+
+.list-info{
+    font-size: 1em;
 }

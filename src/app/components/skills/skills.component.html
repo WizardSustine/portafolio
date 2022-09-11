@@ -7,13 +7,15 @@
     <div>
        <ul class="row justify-content-around">
            <li class="col" *ngFor="let skill of skillsList">
-                    <p class="skillname row justify-content-around">{{skill.name}}</p>
-                    <p class="skillper row justify-content-around"> {{skill.porcentaje}}%</p>                  
-                     <span>
-                        <div class="progress row" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)"> 
-                           <div class="progress-value"></div>
-                        </div>
-                    </span>
+               <div class="row justify-content-around">
+                  <span class="col"><img class="skillimg" [src]="skill.img" [alt]="skill.name"/></span>
+                  <p class="skillper col"> {{skill.porcentaje}}%</p>                  
+                  <span>
+                     <div class="progress row" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)"> 
+                        <div class="progress-value"></div>
+                     </div>
+                  </span>
+               </div>
            </li>
         </ul>
     </div>

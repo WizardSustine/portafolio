@@ -2,14 +2,14 @@
     "name":"Juan Bustamante",
     "backImage":"https://raw.githubusercontent.com/WizardSustine/portafolio/c2edf64ccc906b00811bcb51b17da7d6f9e2001b/src/assets/banner.png",
     "image":"",
+    "Github":"https://github.com/WizardSustine",
+    "Facebook":"https://github.com/WizardSustine",
+    "Instagram":"https://github.com/WizardSustine",
+    "Twitter":"https://github.com/WizardSustine",
+    "Linkedin":"https://github.com/WizardSustine",
     "position":"Técnico en Departamento de Análisis Digital Forense",
     "company":{
        "name":"Departamento de Análisis Digital Forense",
-       "img":"",
-       "url":""
-    },
-    "school":{
-       "name":"",
        "img":"",
        "url":""
     },
@@ -18,12 +18,22 @@
     "experiences":[{
          "position":"Plomero",
          "company":"Informal",
-         "img":"",
+         "img":"https://lh3.googleusercontent.com/drive-viewer/AJc5JmSv5M5r2eSo4Am3rTeibVObbDA-8IcnnELN2DOyvcGg_onAD6zFDVEN_6-OMEHvdvelK4ZPo44=w3920-h8056",
          "mode":"full time",
          "start":"01/01/2010",
          "end":"01/01/2018",
-         "timelapsed":"8 años"
-    }],
+         "timelapsed":"8 años",
+         "city": "Rosario, Santa Fe, Argentina"
+    },
+    {
+         "position":"Suboficial de Policía",
+         "company":"Gobierno de Santa Fe",
+         "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Policia_santafe_emblem.png/160px-Policia_santafe_emblem.png",
+         "mode":"full time",
+         "start":"28/01/2020",
+         "end":"actual",
+         "timelapsed":"2 años",
+         "city": "Rosario, Santa Fe, Argentina"}],
     "education":[{
          "school":"Instituto de Seguridad Pública",
          "degree":"Técnico Superior",
@@ -34,27 +44,33 @@
          "end":"2022"
     },
     {
-      "school":"Escuela Superior de Comercio Nº 49 Capitán General Justo José de Urquiza",
-      "degree":"Técnico Superior",
-      "img":"https://www.terciariourquiza.edu.ar/images/nuevas-carreras/DS.jpg",
-      "career":"Desarrollo de Software",
-      "score": 0,
-      "start":"2022",
-      "end":"2025"
+         "school":"Escuela Superior de Comercio Nº 49 Capitán General Justo José de Urquiza",
+         "degree":"Técnico Superior",
+         "img":"https://www.terciariourquiza.edu.ar/images/nuevas-carreras/DS.jpg",
+         "career":"Desarrollo de Software",
+         "score": 0,
+         "start":"2022",
+         "end":"2025"
    }],
    "skills":[{
       "name":"Java",
-      "img":"",
+      "img":"https://dev.java/assets/images/java-logo-60.png",
       "porcentaje":"65"
    },
    {
       "name":"JS",
-      "img":"",
+      "img":"https://lenguajejs.com/assets/logo.svg",
       "porcentaje":"5"
    },
    {
       "name":"algomás",
       "img":"",
       "porcentaje":"95"
+   }],
+   "projects":[{
+      "name":"algomás",
+      "img":"https://angular.io/assets/images/logos/angular/shield-large.svg",
+      "link":"",
+      "description":"95"
    }]
 }

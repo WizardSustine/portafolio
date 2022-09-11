@@ -11,6 +11,10 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { EducationComponent } from './components/education/education.component';
+import { LogoComponent } from './components/header/logo/logo.component';
+import { BannerComponent } from './components/header/banner/banner.component';
+import { SocialinksComponent } from './components/header/socialinks/socialinks.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ExperiencesComponent,
     FooterComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    EducationComponent,
+    LogoComponent,
+    BannerComponent,
+    SocialinksComponent
   ],
   imports: [
     BrowserModule,
