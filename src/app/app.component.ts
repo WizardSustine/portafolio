@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolio';
+  private btn: any;
+
+  ngOnInit(): void {
+    this.btn = document.getElementsByClassName("btn-edit");
+    for(var i = 0; i<this.btn.length; i++){
+    this.btn[i].style = "display: none";}
+  }
 }
 
 /*export class Persona{

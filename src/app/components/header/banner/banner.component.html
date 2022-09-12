@@ -2,25 +2,5 @@
     <div id="background-banner">
         <img [src]="miPortfolio.backImage" alt="banner"/>
     </div>
-    <div id="info" style="padding: 16px;">
-        <div id="personal-picture">
-            <img [src]="miPortfolio.profileImage" class="profile-image" alt="profile-picture"/>
-        </div>
-        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-        <div id="info-data">
-            <div class="row justify-content-around">
-                <div class="col"><h1>{{miPortfolio.name}}</h1></div>
-                <div id="col info-company">{{miPortfolio.position}} en {{miPortfolio.company.name}}<img [src]="miPortfolio.company.img" [alt]="miPortfolio.company.url"/></div>
-                <div id="col info-contact">
-                    <span>{{miPortfolio.ubicacion}}</span>
-                    <span><a href=""></a></span>
-                </div>
-            </div>
-        </div>
-        <div id="info-actions">
-            <button class="btn btn-primary" type="button">Intereses</button>
-            <button class="btn btn-light" type="button">Añadir sección</button>
-            <button class="btn btn-light" type="button">Más</button>
-        </div>
-    </div>
+    <app-about></app-about>
   </div>

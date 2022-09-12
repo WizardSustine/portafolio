@@ -24,7 +24,7 @@ ul{
     display: block;
     height: calc(100% - 4em);
     width: calc(100% - 4em);
-    background-color: rgb(27, 1, 1);
+    background-color: rgb(36, 86, 24);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -34,7 +34,7 @@ ul{
   }
 
   .bk-ground{
-    background-color: rgb(27, 1, 1);
+    background-color: rgba(22, 91, 4, 0.558);
     color: white;
 }
 .skillimg{

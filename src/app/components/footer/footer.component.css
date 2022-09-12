@@ -1,5 +1,6 @@
 .bk-ground{
-    background-color: rgb(27, 1, 1);
-    color: rgb(254, 132, 132);
+    background-color: rgba(42, 185, 6, 0.558);
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-weight: bold;
 }
