@@ -1,13 +1,8 @@
 {
     "name":"Juan Bustamante",
-    "backImage":"https://raw.githubusercontent.com/WizardSustine/portafolio/c2edf64ccc906b00811bcb51b17da7d6f9e2001b/src/assets/banner.png",
-    "image":"",
-    "Github":"https://github.com/WizardSustine",
-    "Facebook":"https://github.com/WizardSustine",
-    "Instagram":"https://github.com/WizardSustine",
-    "Twitter":"https://github.com/WizardSustine",
-    "Linkedin":"https://github.com/WizardSustine",
-    "position":"Técnico en Departamento de Análisis Digital Forense",
+    "backImage":"https://raw.githubusercontent.com/WizardSustine/portafolio/c2edf64ccc906b00811bcb51b17da7d6f9e2001b/src/assets/banner.jpg",
+    "profileImage":"https://media-exp1.licdn.com/dms/image/C4D03AQHDfq1j78HVRQ/profile-displayphoto-shrink_800_800/0/1662921664399?e=1668643200&v=beta&t=HJYrHio-GsF3UtgGwTgpmGS6BCinPSLfk73CVEjuZz0",
+    "position":"Técnico",
     "company":{
        "name":"Departamento de Análisis Digital Forense",
        "img":"",
@@ -15,6 +10,11 @@
     },
     "ubicacion":"Rosario, Santa Fe (Argentina)",
     "about":"Técnico en mejoramiento de imágenes",
+    "Github":"https://github.com/WizardSustine",
+    "Facebook":"https://github.com/WizardSustine",
+    "Instagram":"https://github.com/WizardSustine",
+    "Twitter":"https://github.com/WizardSustine",
+    "Linkedin":"https://www.linkedin.com/in/juan-bustamante-260440210/",
     "experiences":[{
          "position":"Plomero",
          "company":"Informal",
@@ -60,12 +60,12 @@
    {
       "name":"JS",
       "img":"https://lenguajejs.com/assets/logo.svg",
-      "porcentaje":"5"
+      "porcentaje":"80"
    },
    {
-      "name":"algomás",
-      "img":"",
-      "porcentaje":"95"
+      "name":"Angular",
+      "img":"https://angular.io/assets/images/logos/angular/shield-large.svg",
+      "porcentaje":"35"
    }],
    "projects":[{
       "name":"algomás",

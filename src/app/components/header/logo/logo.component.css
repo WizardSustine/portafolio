@@ -7,7 +7,7 @@ img {
 .plogo{
     float: left;
     color: white;
-    align-self: center;
+    margin-top: 1em;
     padding: 1%;
     font-weight: bold;
     font-size: 0.7em;
