@@ -8,7 +8,7 @@
            <ul class="items-list">
                <li *ngFor="let education of educationList">
                    <div class="container">
-                        <div class="row justify-content-start">
+                        <div class="row justify-content-start card-body">
                             <!--a href="#"-->
                                 <div class="col-2 logo-image-container">
                                     <img class="logo-image-a" [src]="education.img" alt=""/>
@@ -16,6 +16,7 @@
                                 <div class="col-6 list-info">
                                     <h4>{{education.school}}</h4>
                                     <p>{{education.degree}}</p>
+                                    <p>{{education.career}}</p>
                                     <h5><time>{{education.start}}</time> - <time>{{education.end}}</time></h5>
                                 </div>
                             <!--/a-->
