@@ -1,0 +1,11 @@
+.bk-ground{
+    background-color: rgba(22, 91, 4, 0.558);
+    color: white;
+}
+
+img {
+  width: 10em;
+  height: 10em;
+  border-radius: 70%;
+  border: 2px solid ;
+}

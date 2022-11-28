@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.miPortfolio=data[0];
+      this.miPortfolio=data//[0];
     });
   }
   

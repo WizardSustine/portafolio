@@ -1,33 +1,61 @@
-<div class="bk-ground card mat-card">
-<form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+<app-banner></app-banner>
+<section>
+<div class="container py-5 h-100" >
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card containers text-white" style="border-radius: 1rem;">
+        <div class="card-body p-5 text-center">
+
+          <div class="mb-md-5 mt-md-4 pb-5">
+
+            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+            <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
+
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+                <label class="form-label" for="nombreUsuario">Usuario</label>
+              </div>
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required />
+                <label class="form-label" for="password">Password</label>
+              </div>
+
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+            </form>
+
+          </div>
+
+          <div>
+            <!--p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Registrate</a>
+            </p-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!--div class="bk-ground card mat-card">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Dirección de e-mail</label>
-      <input type="email" formControlName="email" 
-      [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
-      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div *ngIf="Email?.errors && Email?.touched">
-        <p *ngIf="Email?.hasError('required')" class="text-danger">
-            El email es requerido.
-        </p>
-        <p *ngIf="Email?.hasError('email')" class="text-danger">
-          El formato de email debe ser válido.
-      </p>
-      </div>
-      <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-      <input type="password" formControlName="password"
-      [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
-      class="form-control" id="exampleInputPassword1">
-      <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text-danger">
-            La contraseña es requerida.
-        </p>
-        <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
-          La contraseña debe tener 8 o más caracteres.
-        </p>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Ingresar</button>
-  </form></div>
+      <form  (ngSubmit)="onLogin()" novalidate>
+        <div class="form-outline form-white mb-4">
+          <input type="email" formControlName="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"/>
+          <label class="form-label" for="nombreUsuario">Usuario</label>
+          <div ngIf="Email?.errors"><p>Ingrese un usuario valido</p></div>
+        </div>
+        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" formControlName="password" id="password" name="password" class="form-control form-control-lg" />
+          <div ngIf="Password?.errors && Password?.touched">
+            <p ngIf="Password?.hasError('Required')">Ingrese un usuario valido</p>
+            <p ngIf="Password?.errors?.minLength">Ingrese un usuario valido</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </form-->
+  <app-footer></app-footer>

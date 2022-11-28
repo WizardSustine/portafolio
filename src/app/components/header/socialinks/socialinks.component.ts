@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-socialinks',
@@ -7,15 +8,27 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./socialinks.component.css']
 })
 export class SocialinksComponent implements OnInit {
+  isLogged = false;
 
-  miPortfolio:any;
 
-  constructor(private datosPortfolio:PorfolioService) { }
+  constructor( private router:Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.miPortfolio=data;
-    });
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged = false;
+    }
   }
-
+  login(){
+    this.router.navigate(['/sesion']);
+  };
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
 }
+function login() {
+  throw new Error('Function not implemented.');
+}
+

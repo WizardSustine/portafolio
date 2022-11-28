@@ -19,6 +19,15 @@ import { SesionComponent } from './components/sesion/sesion.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InterceptorService } from './servicios/interceptor.service';
+import { FormsModule } from '@angular/forms';
+import { NuevaExpComponent } from './components/experiences/nueva-exp.component';
+import { EditExpComponent } from './components/experiences/edit-exp.component';
+import { NuevaEduComponent } from './components/education/nueva-edu.component';
+import { EditEduComponent } from './components/education/edit-edu.component';
+import { NuevaHabiComponent } from './components/skills/nueva-habi.component';
+import { EditHabiComponent } from './components/skills/edit-habi.component';
+import { NuevaProyecComponent } from './components/projects/nueva-proyec.component';
+import { EditProyecComponent } from './components/projects/edit-proyec.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +43,22 @@ import { InterceptorService } from './servicios/interceptor.service';
     BannerComponent,
     SocialinksComponent,
     SesionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NuevaExpComponent,
+    EditExpComponent,
+    NuevaEduComponent,
+    EditEduComponent,
+    NuevaHabiComponent,
+    EditHabiComponent,
+    NuevaProyecComponent,
+    EditProyecComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [PorfolioService,
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }

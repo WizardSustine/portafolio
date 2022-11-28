@@ -1,8 +1,8 @@
 <div>
-    <a href={{miPortfolio.Github}} class=""><img src="../../../../assets/github.png" alt="icono Github"></a>
-    <a href={{miPortfolio.Facebook}} class=""><img src="../../../../assets/facebook.png" alt="icono Facebook"></a>
-    <a href={{miPortfolio.Instagram}} class=""><img src="../../../../assets/instagram.png" alt="icono Instagram"></a>
-    <a href={{miPortfolio.Twitter}} class=""><img src="../../../../assets/twitter.png" alt="icono Twitter"></a>
-    <a href={{miPortfolio.Linkedin}} class=""><img src="../../../../assets/linkedin.png" alt="icono Linkedin"></a>
-    <button class="btn btn-light" type="button">Login</button>
+    <a href="https://github.com/WizardSustine" class=""><img src="../../../../assets/github.png" alt="icono Github"></a>
+    <a href="https://www.facebook.com/juan.bustamante.98" class=""><img src="../../../../assets/facebook.png" alt="icono Facebook"></a>
+    <a href="https://www.instagram.com/juanbusta90" class=""><img src="../../../../assets/instagram.png" alt="icono Instagram"></a>
+    <a href="https://www.linkedin.com/in/juan-bustamante-260440210" class=""><img src="../../../../assets/linkedin.png" alt="icono Linkedin"></a>
+    <button class="btn btn-light" type="button" (click)="login()" *ngIf="!isLogged">Login</button>
+    <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
 </div>

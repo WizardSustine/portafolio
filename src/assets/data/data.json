@@ -1,7 +1,6 @@
 {
     "name":"Juan Bustamante",
-    "backImage":"https://github.com/WizardSustine/portafolio/blob/master/src/assets/banner.jpg?raw=true",
-    "profileImage":"https://media-exp1.licdn.com/dms/image/C4D03AQHDfq1j78HVRQ/profile-displayphoto-shrink_800_800/0/1662921664399?e=1668643200&v=beta&t=HJYrHio-GsF3UtgGwTgpmGS6BCinPSLfk73CVEjuZz0",
+    "img":"https://media-exp1.licdn.com/dms/image/C4D03AQHDfq1j78HVRQ/profile-displayphoto-shrink_800_800/0/1662921664399?e=1668643200&v=beta&t=HJYrHio-GsF3UtgGwTgpmGS6BCinPSLfk73CVEjuZz0",
     "position":"Técnico",
     "company":{
        "name":"Departamento de Análisis Digital Forense",
@@ -10,11 +9,6 @@
     },
     "ubicacion":"Rosario, Santa Fe (Argentina)",
     "about":"Técnico en mejoramiento de imágenes",
-    "Github":"https://github.com/WizardSustine",
-    "Facebook":"https://github.com/WizardSustine",
-    "Instagram":"https://github.com/WizardSustine",
-    "Twitter":"https://github.com/WizardSustine",
-    "Linkedin":"https://www.linkedin.com/in/juan-bustamante-260440210/",
     "experiences":[{
          "position":"Plomero",
          "company":"Informal",

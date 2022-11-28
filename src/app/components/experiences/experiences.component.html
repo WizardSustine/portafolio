@@ -2,11 +2,12 @@
     <div id="experience">
         <div class="card-titles">
         <h2>Experiencia</h2>
-        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        <div class="btn-edit"><!--a href="#" class="btn-right"-->
+            <button type="button" routerLink="/nuevaexp" *ngIf="isLogged"><i class="fa fa-pen"></i>Nueva Experiencia</button></div>
      </div>
      <div>
         <ul class="items-list">
-            <li  *ngFor="let experiense of experiencesList">
+            <li  *ngFor="let experiense of expe">
                 <div class="row justify-content-start card-body">
                     <span class="col-2">
                         <img [src]="experiense.img" alt="Logo empresa"/>
@@ -20,11 +21,15 @@
                         <h5>{{experiense.city}}</h5>
                     </div>
                 </div>
+                <div *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editexp/{{experiense.id}}">
+                        <i class="fa fa-pen"></i> EDITAR</button>
+                </div>
+                <div *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(experiense.id)">
+                        <i class="fa fa-pen"></i> BORRAR</button></div>
             </li>
         </ul>
-        <div class="data-control">
-            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-          </div>
      </div>
     </div>
 </div>
