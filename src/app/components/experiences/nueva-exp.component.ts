@@ -14,8 +14,8 @@ export class NuevaExpComponent implements OnInit {
   img: string = '';
   description: string = '';
   mode: string = '';
-  start: string = '';
-  end: string = '';
+  startt: string = '';
+  endd: string = '';
   timelapsed: string = '';
   city: string = '';
 
@@ -25,7 +25,7 @@ export class NuevaExpComponent implements OnInit {
   }
 
   onCreateEx():void{
-    const expe = new Experiencia(this.position, this.company, this.img, this.description, this.mode, this.start, this.end, this.timelapsed, this.city);
+    const expe = new Experiencia(this.position, this.company, this.img, this.description, this.mode, this.startt, this.endd, this.timelapsed, this.city);
     this.ExpServ.save(expe).subscribe(
       data => {
         alert("Experiencia añadida");

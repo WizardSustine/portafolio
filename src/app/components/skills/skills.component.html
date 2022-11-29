@@ -1,23 +1,32 @@
 <div class="bk-ground card mat-card">
-  <div id="Logros">
-    <div class="card-titles">
-       <h2>Logros</h2>
-       <div class="btn-edit"></div>
-    </div>
-    <div>
-       <ul class="row justify-content-around">
-           <li class="col" *ngFor="let skill of skillsList">
-               <div class="row justify-content-around card-body">
-                  <span class="col"><img class="skillimg" [src]="skill.img" [alt]="skill.name"/></span>
-                  <p class="skillper col"> {{skill.porcentaje}}%</p>                  
-                  <span>
-                     <div class="progress row" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)"> 
-                        <div class="progress-value"></div>
-                     </div>
-                  </span>
+   <div id="Logros">
+      <div class="card-titles">
+         <button class="btn btn-r" type="button" routerLink="/nuevahabil" *ngIf="isLogged">AGREGAR</button> 
+         <h2>Habilidades</h2>
+      </div>
+   </div>
+   <div>
+      <ul class="row justify-content-around">
+         <li class="col" *ngFor="let skill of habi">
+            <div class="row justify-content-around card-body">
+               <span class="col"><img class="skillimg" [src]="skill.img" [alt]="skill.name"/></span>
+               <p class="skillper col"> {{skill.porcentaje}}%</p>                  
+               <span>
+                  <div class="progress row" style="background:conic-gradient(rgb(0,143,255) {{skill.porcentaje}}%,rgb(242,242,244) {{skill.porcentaje}}%)"> 
+                     <div class="progress-value"></div>
+                  </div>
+               </span>
+            </div>
+            <div *ngIf="isLogged">
+               <button class="btn btn-light" routerLink="/edithabil/{{skill.id}}">
+                  <i class="fa fa-pen"></i> EDITAR</button>
+            </div>
+            <div *ngIf="isLogged">
+               <button class="btn btn-light" (click)="delete(skill.id)">
+                  <i class="fa fa-trash"></i><p>BORRAR</p></button>
                </div>
-           </li>
-        </ul>
-    </div>
+         </li>
+      </ul>
+   </div>
 </div>
 

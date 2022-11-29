@@ -1,35 +1,36 @@
 <div class="bk-ground card mat-card">
     <div id="experience">
         <div class="card-titles">
-        <h2>Experiencia</h2>
-        <div class="btn-edit"><!--a href="#" class="btn-right"-->
-            <button type="button" routerLink="/nuevaexp" *ngIf="isLogged"><i class="fa fa-pen"></i>Nueva Experiencia</button></div>
-     </div>
-     <div>
-        <ul class="items-list">
-            <li  *ngFor="let experiense of expe">
-                <div class="row justify-content-start card-body">
-                    <span class="col-2">
-                        <img [src]="experiense.img" alt="Logo empresa"/>
-                    </span>
-                    <div class="col description-list">
-                        <h4>{{experiense.position}}</h4>
-                        <p>en {{experiense.company}}</p><br/>
-                        <p>{{experiense.description}}</p><br/>
-                        <p>Modalidad {{experiense.mode}}</p>
-                        <h5><time>{{experiense.start}}</time> - <time>{{experiense.end}}</time> - <time>{{experiense.timelapsed}}</time></h5>
-                        <h5>{{experiense.city}}</h5>
+            <button class="btn btn-r" type="button" routerLink="/nuevaexpe" *ngIf="isLogged">AGREGAR</button>
+            <h2>Experiencia</h2>  
+        </div>
+        <div>
+            <ul class="items-list">
+                <li  *ngFor="let experiense of expe">
+                    <div class="container-fluid">
+                    <div class="row justify-content-start card-body">
+                        <span class="col-2">
+                            <img [src]="experiense.img" alt="Logo empresa"/>
+                        </span>
+                        <div class="col description-list">
+                            <h4>{{experiense.position}}</h4>
+                            <p>en {{experiense.company}}</p><br/>
+                            <p>{{experiense.description}}</p><br/>
+                            <p>Modalidad {{experiense.mode}}</p>
+                            <h5><time>{{experiense.startt}}</time> - <time>{{experiense.endd}}</time> - <time>{{experiense.timelapsed}}</time></h5>
+                            <h5>{{experiense.city}}</h5>
+                        </div>
                     </div>
-                </div>
-                <div *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editexp/{{experiense.id}}">
-                        <i class="fa fa-pen"></i> EDITAR</button>
-                </div>
-                <div *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(experiense.id)">
-                        <i class="fa fa-pen"></i> BORRAR</button></div>
-            </li>
-        </ul>
-     </div>
+                    <div *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexpe/{{experiense.id}}">
+                            <i class="fa fa-pen"></i> EDITAR</button>
+                    </div>
+                    <div *ngIf="isLogged">
+                        <button class="btn btn-light" (click)="delete(experiense.id)">
+                            <i class="fa fa-trash"></i><p>BORRAR</p></button></div>
+                        </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

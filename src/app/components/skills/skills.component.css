@@ -41,3 +41,19 @@ ul{
     max-height: 50px;
     
 }
+
+.btn-light{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+    align-items: center;
+    float: right;
+}
+.btn-r{
+    background-color: rgb(82, 205, 37);
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+    align-items: center;
+    float: right;
+    font-weight: bolder;
+}

@@ -11,6 +11,10 @@
                     <input type="text" class="form-control" id="company" name="company" [(ngModel)]="expes.company" required>
                 </div>
                 <div class="form-group">
+                    <label for="img">Link de una imagen de su empresa</label>
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="expes.img" required>
+                </div>
+                <div class="form-group">
                     <label for="description">Descripcion de la tarea</label>
                     <input type="text" class="form-control" id="description" name="description" [(ngModel)]="expes.description" required>
                 </div>
@@ -20,11 +24,11 @@
                 </div>
                 <div class="form-group">
                     <label for="start">Fecha de inicio</label>
-                    <input type="text" class="form-control" id="start" name="start" [(ngModel)]="expes.start" required>
+                    <input type="text" class="form-control" id="start" name="start" [(ngModel)]="expes.startt" required>
                 </div>
                 <div class="form-group">
                     <label for="end">Fecha de finalización</label>
-                    <input type="text" class="form-control" id="end" name="end" [(ngModel)]="expes.end" required>
+                    <input type="text" class="form-control" id="end" name="end" [(ngModel)]="expes.endd" required>
                 </div>
                 <div class="form-group">
                     <label for="timelapsed">Tiempo transcurrido</label>
@@ -33,10 +37,6 @@
                 <div class="form-group">
                     <label for="city">Ciudad en que ocupó el cargo</label>
                     <input type="text" class="form-control" id="city" name="city" [(ngModel)]="expes.city" required>
-                </div>
-                <div class="form-group">
-                    <label for="img">Link de una imagen de su empresa</label>
-                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="expes.img" required>
                 </div>
                 <button class="btn btn-primary">
                     Guardar cambios

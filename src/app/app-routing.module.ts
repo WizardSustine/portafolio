@@ -14,8 +14,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 const routes: Routes = [
   {path:"", component:PortfolioComponent },
   {path:"sesion", component:SesionComponent},
-  {path:'nuevaexp', component:NuevaExpComponent},
-  {path:'editexp/:id', component:EditExpComponent},
+  {path:'nuevaexpe', component:NuevaExpComponent},
+  {path:'editexpe/:id', component:EditExpComponent},
   {path:'nuevaedu', component:NuevaEduComponent},
   {path:'editedu/:id', component:EditEduComponent},
   {path:'nuevahabil', component:NuevaHabiComponent},

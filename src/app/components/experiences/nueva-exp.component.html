@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group">
                     <label for="img">Link de una imagen de su empresa</label>
-                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" required />
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="img" required />
                 </div>
                 <div class="form-group">
                     <label for="description">Descripcion de la tarea</label>
@@ -23,12 +23,12 @@
                     <input type="text" class="form-control" id="mode" name="mode" [(ngModel)]="mode" required />
                 </div>
                 <div class="form-group">
-                    <label for="start">Fecha de inicio</label>
-                    <input type="text" class="form-control" id="start" name="start" [(ngModel)]="start" required />
+                    <label for="startt">Fecha de inicio</label>
+                    <input type="text" class="form-control" id="startt" name="startt" [(ngModel)]="startt" required />
                 </div>
                 <div class="form-group">
-                    <label for="end">Fecha de finalización</label>
-                    <input type="text" class="form-control" id="end" name="end" [(ngModel)]="end" required />
+                    <label for="endd">Fecha de finalización</label>
+                    <input type="text" class="form-control" id="endd" name="endd" [(ngModel)]="endd" required />
                 </div>
                 <div class="form-group">
                     <label for="timelapsed">Tiempo transcurrido</label>
@@ -39,7 +39,7 @@
                     <input type="text" class="form-control" id="city" name="city" [(ngModel)]="city" required />
                 </div>
                 <button class="btn btn-primary">
-                    Agregar experiencia
+                    Añadir
                 </button>
             </form>
         </div>

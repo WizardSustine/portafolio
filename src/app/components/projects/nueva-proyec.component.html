@@ -1,1 +1,27 @@
-<p>nueva-proyec works!</p>
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreatePr()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="name">Nombre de su proyecto</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="img">Link de una imagen de su proyecto</label>
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="img" required />
+                </div>
+                <div class="form-group">
+                    <label for="link">Link</label>
+                    <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required />
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripcion del mismo</label>
+                    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description" required />
+                </div>
+                <button class="btn btn-primary">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

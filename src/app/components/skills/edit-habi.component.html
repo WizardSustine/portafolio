@@ -1,1 +1,23 @@
-<p>edit-habi works!</p>
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="name">Nombre de la habilidad</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="habis.name" required />
+                </div>
+                <div class="form-group">
+                    <label for="img">Link de una imagen representativa</label>
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="habis.img" required />
+                </div>
+                <div class="form-group">
+                    <label for="porcentaje">Fecha de inicio</label>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="habis.porcentaje" required />
+                </div>
+                <button class="btn btn-primary">
+                    Agregar habilidad
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,35 @@
-<p>nueva-edu works!</p>
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreateEd()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="career">Nombre de la carrera</label>
+                    <input type="text" class="form-control" id="career" name="career" [(ngModel)]="career" required />
+                </div>
+                <div class="form-group">
+                    <label for="school">Nombre de la institución</label>
+                    <input type="text" class="form-control" id="school" name="school" [(ngModel)]="school" required />
+                </div>
+                <div class="form-group">
+                    <label for="degree">Título de la carrera</label>
+                    <input type="text" class="form-control" id="degree" name="degree" [(ngModel)]="degree" required />
+                </div>
+                <div class="form-group">
+                    <label for="img">Link de una imagen de la institución</label>
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="img" required />
+                </div>
+                <div class="form-group">
+                    <label for="startt">Fecha de inicio</label>
+                    <input type="text" class="form-control" id="startt" name="startt" [(ngModel)]="startt" required />
+                </div>
+                <div class="form-group">
+                    <label for="endd">Fecha de finalización</label>
+                    <input type="text" class="form-control" id="endd" name="endd" [(ngModel)]="endd" required />
+                </div>
+                <button class="btn btn-primary">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
