@@ -17,4 +17,8 @@ export class PorfolioService {
     return this.http.get<persona>(this.url+'traer/perfil');
   };
 
+  public update(id: number, per:persona): Observable<any>{
+    return this.http.put<any>(this.url + `editar/${id}?nombre=${per.nombre}&apellido=${per.apellido}&img=${per.img}&position=${per.position}&company=${per.company}&ubicacion=${per.ubicacion}&about=${per.about}`, '');
+  }
+
 }

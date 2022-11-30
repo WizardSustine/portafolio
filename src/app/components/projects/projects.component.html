@@ -6,7 +6,7 @@
         </div>
         <div>
             <ul class="items-list">
-                <li  *ngFor="let project of proye">
+                <li class="card-body" style="border:solid; border-color: rgba(0, 0, 0, 0.253); display:flexbox" *ngFor="let project of proye">
                     <div class="row justify-content-start">
                         <span class="col-2">
                             <img [src]="project.img" alt="tecnología"/>
@@ -14,7 +14,7 @@
                         <div class="col description-list">
                             <h4>{{project.name}}</h4>
                             <p>{{project.description}}</p><br/>
-                            <h5>{{project.link}}</h5>
+                            <a href={{project.link}}>{{project.link}}</a>
                         </div>
                     </div>
                     <div *ngIf="isLogged">

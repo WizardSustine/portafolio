@@ -1,17 +1,21 @@
-<div class="bk-ground card mat-card" id="first-card">
-<div id="info" style="padding: 16px;">
-    <div id="personal-picture">
-        <img [src]="persona.img" />
-    </div>
-    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-    <div id="info-data">
-        <div class="row justify-content-around">
-            <div class="col"><h1>{{persona.nombre}} {{persona.apellido}}</h1></div>
-            <div id="col info-company">{{persona.position}} en {{persona.company}}</div>
-            <div id="col info-contact">
-                <span>{{persona.ubicacion}}</span>
-                <span><p>Me desempeñe como {{persona.about}}</p></span>
-            </div></div>
+<div id="first-card">
+    <div id="info" style="padding: 16px;">
+        <div id="personal-picture">
+            <img class="profile-image" [src]="persona.img" />
+        </div>
+        <div id="info-data">
+            <div class="row justify-content-around">
+                <div class="col"><h1>{{persona.nombre}} {{persona.apellido}}</h1></div>
+                <div id="col info-company">{{persona.position}} en {{persona.company}}</div>
+                <div id="col info-contact">
+                    <span>{{persona.ubicacion}}</span>
+                    <span><p>Me desempeñe como {{persona.about}}</p></span>
+                </div>
+                <div  *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editabout/{{persona.id}}">
+                        <i class="fa fa-pen"></i> EDITAR</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@
    </div>
    <div>
       <ul class="row justify-content-around">
-         <li class="col" *ngFor="let skill of habi">
+         <li class="col" style="border:solid; border-color: rgba(0, 0, 0, 0.253); display:flexbox" *ngFor="let skill of habi">
             <div class="row justify-content-around card-body">
                <span class="col"><img class="skillimg" [src]="skill.img" [alt]="skill.name"/></span>
                <p class="skillper col"> {{skill.porcentaje}}%</p>                  

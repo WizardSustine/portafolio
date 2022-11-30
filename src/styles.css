@@ -44,9 +44,7 @@ ol, ul{
     padding: 20px;
     border-color: black;
 }
-.mat-card#first-card{
-    padding: 0;
-}
+
 div#background-banner{
     display: flex;
     z-index: 1;
@@ -59,7 +57,7 @@ div#background-banner img{
     border-radius: 50%;
     width: 7em;
     height: 7em;
-    margin-top: -110px;
+    top: -5ex;
     z-index: 1;
     position:relative;
 }

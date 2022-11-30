@@ -28,6 +28,7 @@ import { NuevaHabiComponent } from './components/skills/nueva-habi.component';
 import { EditHabiComponent } from './components/skills/edit-habi.component';
 import { NuevaProyecComponent } from './components/projects/nueva-proyec.component';
 import { EditProyecComponent } from './components/projects/edit-proyec.component';
+import { NuevoaboutComponent } from './components/about/nuevoabout.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { EditProyecComponent } from './components/projects/edit-proyec.component
     NuevaHabiComponent,
     EditHabiComponent,
     NuevaProyecComponent,
-    EditProyecComponent
+    EditProyecComponent,
+    NuevoaboutComponent
   ],
   imports: [
     BrowserModule,

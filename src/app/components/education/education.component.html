@@ -6,27 +6,29 @@
         </div>
         <div>
            <ul class="items-list">
-               <li *ngFor="let education of edu">
-                    <div class="row justify-content-start card-body">
-                        <div class="col-2 logo-image-container">
-                            <img class="logo-image-a" [src]="education.img" alt=""/>
-                        </div>a
-                        <div class="col-6 list-info">
-                            <h4>{{education.school}}</h4>
-                            <p>{{education.degree}}</p>
-                            <p>{{education.career}}</p>
-                            <h5><time>{{education.startt}}</time> - <time>{{education.endd}}</time></h5>
-                        </div>
-                        <div *ngIf="isLogged">
-                            <button class="btn btn-light" routerLink="/editedu/{{education.id}}">
-                                <i class="fa fa-pen"></i> EDITAR</button>
-                        </div>
-                        <div *ngIf="isLogged">
-                            <button class="btn btn-light" (click)="delete(education.id)">
-                                <i class="fa fa-trash"></i><p>BORRAR</p></button>
-                            </div>
-                    </div>           
-               </li>
+            <li class="card-body" style="border:solid; border-color: rgba(0, 0, 0, 0.253); display:flexbox" *ngFor="let education of edu">
+                <div class="container-fluid">
+                <div class="row justify-content-start card-body">
+                    <span class="col-2">
+                        <img [src]="education.img" alt="Logo empresa"/>
+                    </span>
+                    <div class="col description-list">
+                        <h4>{{education.school}}</h4>
+                        <p>{{education.degree}}</p><br/>
+                        <p>{{education.career}}</p><br/>
+                        <p></p>
+                        <h5><time>{{education.startt}}</time> - <time>{{education.endd}}</time></h5>
+                    </div>
+                </div>
+                <div *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editedu/{{education.id}}">
+                        <i class="fa fa-pen"></i> EDITAR</button>
+                </div>
+                <div *ngIf="isLogged">
+                    <button class="btn btn-light" (click)="delete(education.id)">
+                        <i class="fa fa-trash"></i><p>BORRAR</p></button></div>
+                    </div>
+            </li>
            </ul>
         </div>
     </div>

@@ -5,15 +5,17 @@
 ul{
     list-style: none;
 }
-.logo-image-a {
-    max-height: 4em;
-    margin-top: 1em;
+li{
+    display: inline-block;
+    width:100%;
 }
-
-.list-info{
-    font-size: 1em;
+img{
+    height: 5.5em;
+    width: 5.5em;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 50%;
+    
 }
-
 .btn-light{
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);

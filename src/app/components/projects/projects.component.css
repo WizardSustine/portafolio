@@ -5,8 +5,17 @@
 ul{
     list-style: none;
 }
+li{
+    display: inline-block;
+    width:100%;
+}
 img{
-    max-height: 6em;
+    height: 5.5em;
+    width: 5.5em;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 50%;
+    position: relative;
+    
 }
 .btn-light{
     background-color: rgba(255, 255, 255, 0);

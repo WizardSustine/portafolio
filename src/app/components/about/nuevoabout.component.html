@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="pers.nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="pers.apellido" required />
+                </div>
+                <div class="form-group">
+                    <label for="img">Link de una imagen de perfil</label>
+                    <input type="url" placeholder="https://example.com" pattern="https://.*" size="255" id="img" name="img" [(ngModel)]="pers.img" required />
+                </div>
+                <div class="form-group">
+                    <label for="position">Posición que ocupa actualmente</label>
+                    <input type="text" class="form-control" id="position" name="position" [(ngModel)]="pers.position" required />
+                </div>
+                <div class="form-group">
+                    <label for="company">Compañía</label>
+                    <input type="text" class="form-control" id="company" name="company" [(ngModel)]="pers.company" required />
+                </div>
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" class="form-control" id="ubicacion" name="ubicacion" [(ngModel)]="pers.ubicacion" required />
+                </div>
+                <div class="form-group">
+                    <label for="about">Acerca de</label>
+                    <input type="text" class="form-control" id="about" name="about" [(ngModel)]="pers.about" required />
+                </div>
+                <button class="btn btn-primary">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
