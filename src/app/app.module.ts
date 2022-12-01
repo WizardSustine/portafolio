@@ -30,6 +30,15 @@ import { NuevaProyecComponent } from './components/projects/nueva-proyec.compone
 import { EditProyecComponent } from './components/projects/edit-proyec.component';
 import { NuevoaboutComponent } from './components/about/nuevoabout.component';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyANDG2FkkdiIQ2ZmSHRPmXTvW3OJ86VpSU",
+  authDomain: "portfolio-web-argentinap.firebaseapp.com",
+  projectId: "portfolio-web-argentinap",
+  storageBucket: "portfolio-web-argentinap.appspot.com",
+  messagingSenderId: "857812538950",
+  appId: "1:857812538950:web:657a78092d5ef3fdd6dc47"
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +62,7 @@ import { NuevoaboutComponent } from './components/about/nuevoabout.component';
     EditHabiComponent,
     NuevaProyecComponent,
     EditProyecComponent,
-    NuevoaboutComponent
+    NuevoaboutComponent,
   ],
   imports: [
     BrowserModule,

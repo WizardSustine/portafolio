@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosServiceService {
-  proURL = 'http://localhost:8080/proyectos/';
+  proURL = 'https://ascendant-timer-370220.rj.r.appspot.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionServiceService {
-  eduURL = 'http://localhost:8080/education/';
+  eduURL = 'https://ascendant-timer-370220.rj.r.appspot.com/education/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 })
 export class PorfolioService {
 
-  url:string="http://localhost:8080/persona/";
+  url:string="https://ascendant-timer-370220.rj.r.appspot.com/persona/";
 
   constructor(private http:HttpClient) { }
 
