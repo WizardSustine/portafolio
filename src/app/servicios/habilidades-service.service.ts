@@ -6,7 +6,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class HabilidadesServiceService {
-  habURL = 'https://ascendant-timer-370220.rj.r.appspot.com/habilidades/';
+  habURL = 'https://backend-app-r4k5.onrender.com/habilidades/';
 
   constructor(private httpClient: HttpClient) { }
 

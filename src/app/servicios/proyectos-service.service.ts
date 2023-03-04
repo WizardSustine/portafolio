@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosServiceService {
-  proURL = 'https://ascendant-timer-370220.rj.r.appspot.com/proyectos/';
+  proURL = 'https://backend-app-r4k5.onrender.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

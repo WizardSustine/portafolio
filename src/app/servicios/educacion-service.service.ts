@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionServiceService {
-  eduURL = 'https://ascendant-timer-370220.rj.r.appspot.com/education/';
+  eduURL = 'https://backend-app-r4k5.onrender.com/education/';
 
   constructor(private httpClient: HttpClient) { }
 
